@@ -8,16 +8,13 @@ Each file corresponds to one cosmological model/dataset and is stored in **HDF5 
 ## File structure
 
 Each file is named after the model identifier, e.g.:
-
+```
 ---chains_export/
-
 ├── UoLambdaCDM.h5
-
 ├── UoFlatwCDM.h5
-
 ├── UoFlatw0waCDM.h5
-
 └── ...
+```
 
 ## File content
 

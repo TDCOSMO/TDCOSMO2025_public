@@ -10,9 +10,13 @@ Each file corresponds to one cosmological model/dataset and is stored in **HDF5 
 Each file is named after the model identifier, e.g.:
 
 ---chains_export/
+
 ├── UoLambdaCDM.h5
+
 ├── UoFlatwCDM.h5
+
 ├── UoFlatw0waCDM.h5
+
 └── ...
 
 ## File content
@@ -80,7 +84,7 @@ import h5py
 import numpy as np
 
 # Load an example file
-with h5py.File("chains_export/UoLambdaCDM.h5", "r") as f:
+with h5py.File("chains_export/w_0w_aCDM3.h5", "r") as f:
     samples = f["samples"][:]                # MCMC samples
     parameters = [p.decode() for p in f["parameters"][:]]  # parameter names
     description = f.attrs["description"]
@@ -88,6 +92,7 @@ with h5py.File("chains_export/UoLambdaCDM.h5", "r") as f:
     dataset_name = f.attrs["dataset"]
 
 print("Description:", description)
+print('Sample shape:', samples.shape)
 print(f"Model: {model_id}")
 print(f"Dataset: {dataset_name}")
 ```
@@ -115,5 +120,6 @@ archivePrefix = {arXiv},
 ```
 
 Corresponding author: Martin Millon, Simon Birrer, Anowar Shajib
+
 DOI: [to be assigned upon Zenodo release]
 

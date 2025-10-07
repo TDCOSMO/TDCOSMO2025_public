@@ -1,0 +1,19 @@
+# anisotropy model
+anisotropy: const # anisotropy model for deflector, supported types are ["OM", "GOM", "const"]
+anisotropy_parameterization: TAN_RAD # parameter sampled for the constant anisotropy model, supported types are ['TAN_RAD', 'beta']
+
+# kinematic modeling
+kin_axi_correction: true # turn on axisymmetric JAM correction in the lens-model-predicted velocity dispersion; if False, use spherical JAM
+
+# mcmc settings
+run_chain: true # if True, runs a mcmc chain with the setting, if False, looks in the backend and retrieves the chain
+n_run_emcee: 5400 # number of iterations to run in the emcee chain
+n_burn_emcee: 540 # number of burn-in iterations in the emcee chain
+continue_from_backend: false # if True, continues sampling the emcee chain from a backend (if exists), otherwise deletes previous chains and starts from scratch
+
+# output settings
+run_name: test_with_correction # name of the run
+output_dir: test_chains # output directory for the chain backend and configuration files
+
+# dataset options
+sampling_index: 0

@@ -1,4 +1,4 @@
-# TDCOSMO MCMC Chain Release
+# TDCOSMO 2025 MCMC Chain Release
 
 This repository contains the **posterior MCMC samples** from the TDCOSMO collaboration analysis.  
 Each file corresponds to one cosmological model/dataset and is stored in **HDF5 (`.h5`) format**

@@ -1,0 +1,329 @@
+B1608+656:
+  comment_lens_model: 'no model parameters in Suyu+2009'
+  comment_sigma_v: 'From Suyu 2010: "The size of the aperture was chosen to avoid
+    contamination from the spectrum of G2 while maximizing the total flux for an improved
+    signal-to-noise ratio." "r_app" : (0.84 + 1)/4. From Shawn Knabel (25/05/09): JWST-NIRSpec integrated velocity dispersion supercedes previous.'
+  flag: 1
+  gamma: 2.08
+  gamma_error: 0.03
+  kappa_ext: 0.1
+  kappa_ext_err_down: 0.04
+  kappa_ext_err_up: 0.04
+  r_eff: 0.59
+  r_eff_error: 0.06
+  theta_E: 0.81
+  theta_E_error: 0.02
+  z_lens: 0.6304
+  z_source: 1.394
+  light_model: Hernquist
+  comments_light: 'no available fits, light removes G2, we use the Hernquist approximation'
+  Keck-LRIS:
+    sigma_v: 260
+    sigma_v_error: 15
+    sigma_v_source: Suyu+2010
+    psf_fwhm: 0.9
+    slit_length: 1.0
+    slit_width: 0.84
+  JWST_NIRSpec:
+    sigma_v: 305.3
+    sigma_v_error: 11.0
+    slit_length: 0.55
+    slit_width: 0.55
+    psf_fwhm: 0.15
+DES0408-5354:
+  GEMINI_A:
+    sigma_v: 230
+    sigma_v_error: 37
+    slit_length: 1.0
+    slit_width: 1.0
+    psf_fwhm: 0.68
+    moffat_beta: 2.97
+  GEMINI_B:
+    sigma_v: 236
+    sigma_v_error: 42
+    slit_length: 1.0
+    slit_width: 1.0
+    psf_fwhm: 0.76
+    moffat_beta: 3.20
+  GEMINI_A2:
+    sigma_v: 220
+    sigma_v_error: 21
+    slit_length: 1.0
+    slit_width: 1.0
+    psf_fwhm: 0.61
+    moffat_beta: 1.55
+  MUSE:
+    sigma_v: 242.3
+    sigma_v_error: 12.2
+    aperture_radius: 1.0
+    psf_fwhm: 0.52
+  comment_sigma_v: '4 different velocity dispersion measurements (see Buckley-Geer
+      et al. 2020, Shajib et al. 2020. GEMINI covariance is 17km/s. MUSE superceeds these measurements.'
+  amp_sersic_1: 2.26077997243009
+  e1_sersic1: -0.0886814532269341
+  e2_sersic1: 0.067288815019306
+  flag: 1
+  gamma: 1.9
+  gamma_error: 0.03
+  kappa_ext: -0.0452
+  kappa_ext_err_down: 0.0233
+  kappa_ext_err_up: 0.0371
+  light_model: single_sersic
+  n_sersic_1: 5.61613028240515
+  r_eff: 1.94
+  r_eff_error: 0.05
+  r_sersic_1: 1.94414890654355
+  theta_E: 1.92
+  theta_E_error: 0.01
+  z_lens: 0.597
+  z_source: 2.375
+HE0435-1223:
+  amp_sersic_1: 26.05016368
+  amp_sersic_2: 5.6787869
+  comment_sigma_v: 'only Ddt constraints from H0LiCOW analysis. From Shawn Knabel (25/05/09): JWST-NIRSpec integrated velocity dispersion supercedes previous.'
+  e1_sersic1: -0.075432736
+  e1_sersic2: -0.075432736
+  e2_sersic1: -0.018280239
+  e2_sersic2: -0.018280239
+  flag: 1
+  gamma: 1.93
+  gamma_error: 0.02
+  kappa_ext: 0.006
+  kappa_ext_err_down: 0.024
+  kappa_ext_err_up: 0.031
+  light_model: double_sersic
+  n_sersic_1: 4.0
+  n_sersic_2: 1.0
+  r_eff: 1.8
+  r_eff_error: 0.05
+  r_sersic_1: 0.927248947
+  r_sersic_2: 2.672435934
+  theta_E: 1.22
+  theta_E_error: 0.05
+  z_lens: 0.4546
+  z_source: 1.693
+  JWST_NIRSpec: 
+    sigma_v: 226.6
+    sigma_v_error: 5.8
+    slit_length: 0.55
+    slit_width: 0.55
+    psf_fwhm: 0.15
+  Keck-LRIS:
+    sigma_v: 222
+    sigma_v_error: 15
+    slit_length: 0.74
+    slit_width: 0.54
+    psf_fwhm: 0.8
+PG1115+080:
+  amp_sersic_1: 71.88896199
+  amp_sersic_2: 6.208056577
+  e1_sersic1: -0.003494749
+  e1_sersic2: -0.003494749
+  e2_sersic1: -0.030629104
+  e2_sersic2: -0.030629104
+  flag: 1
+  gamma: 2.17
+  gamma_error: 0.05
+  kappa_ext: 0.006
+  kappa_ext_err_down: 0.027
+  kappa_ext_err_up: 0.027
+  light_model: double_sersic
+  n_sersic_1: 4.0
+  n_sersic_2: 1.0
+  r_eff: 0.45
+  r_eff_error: 0.05
+  r_sersic_1: 0.241420468
+  r_sersic_2: 0.868455474
+  theta_E: 1.08
+  theta_E_error: 0.02
+  z_lens: 0.311
+  z_source: 1.722
+  comment_sigma_v: 'From Shawn Knabel (25/05/09): JWST-NIRSpec integrated velocity dispersion. Keck-LRIS from Tonry et al. MUSE covariant systematics 23.6km/s'
+  JWST_NIRSpec: 
+    sigma_v: 235.7
+    sigma_v_error: 6.6
+    slit_length: 0.55
+    slit_width: 0.55
+    psf_fwhm: 0.15
+  Keck-LRIS:
+    sigma_v: 281
+    sigma_v_error: 25
+    slit_length: 1.06
+    slit_width: 1
+    psf_fwhm: 0.8
+  MUSE_inner:
+    sigma_v: 277
+    sigma_v_error: 6.5
+    slit_length: 0.6
+    slit_width: 0.6
+    psf_fwhm: 0.67
+  MUSE_outer:
+    sigma_v: 241
+    sigma_v_error: 8.8
+    width_inner: 0.6
+    width_outer: 1.0
+    psf_fwhm: 0.67
+RXJ1131-1231:
+  flag: 1
+  gamma: 1.95
+  gamma_error: 0.05
+  kappa_ext: 0.074
+  kappa_ext_err_down: 0.035
+  kappa_ext_err_up: 0.055
+  r_eff: 1.91
+  r_eff_error: 0.05
+  light_profile_F814W:
+    light_model: double_sersic
+    n_sersic_1: 1.5442
+    n_sersic_2: 1.1325
+    amp_sersic_1: 468.94
+    amp_sersic_2: 33.00299
+    e1_sersic1: 0.0402
+    e1_sersic2: 0.0348
+    e2_sersic1: -0.0703
+    e2_sersic2: -0.0633
+    r_sersic_1: 0.2871
+    r_sersic_2: 2.4136
+  light_profile_IR_F814W_stitched:
+    light_model: double_sersic
+    n_sersic_1: 1.0944595455015418
+    n_sersic_2: 1.7605518283128168
+    amp_sersic_1: 0.39663433215949195
+    amp_sersic_2: 8.551691817745715
+    r_sersic_1: 2.4490409906979527
+    r_sersic_2: 0.32443885414478374
+    e1_sersic1: 0.0402
+    e1_sersic2: 0.0348
+    e2_sersic1: -0.0703
+    e2_sersic2: -0.0633
+  Keck_LRIS:
+    psf_fwhm: 0.7
+    sigma_v: 323
+    sigma_v_error: 20
+    slit_length: 0.7
+    slit_width: 0.81
+  JWST_NIRSpec:
+    sigma_v: 303.0
+    sigma_v_error: 8.3
+    aperture_radius: 0.955
+    psf_fwhm: 0.1475
+  theta_E: 1.63
+  theta_E_error: 0.02
+  z_lens: 0.295
+  z_source: 0.654
+SDSS1206+4332:
+  amp_sersic_1: 544.297917884126
+  amp_sersic_2: 41.6592171668041
+  e1_sersic1: 0.101718524156616
+  e1_sersic2: 0.0860219374155727
+  e2_sersic1: -0.186532007916322
+  e2_sersic2: 0.12769736464979
+  flag: 1
+  gamma: 1.95
+  gamma_error: 0.05
+  kappa_ext: -0.003
+  kappa_ext_err_down: 0.029
+  kappa_ext_err_up: 0.029
+  light_model: double_sersic
+  n_sersic_1: 4.0
+  n_sersic_2: 1.0
+  r_eff: 0.29
+  r_eff_error: 0.05
+  r_sersic_1: 0.162717265874443
+  r_sersic_2: 0.58459605276187
+  theta_E: 1.25
+  theta_E_error: 0.01
+  z_lens: 0.745
+  z_source: 1.789
+  Keck-DEIMOS:
+    sigma_v: 290
+    sigma_v_error: 30
+    slit_length: 1.9
+    slit_width: 1.0
+    psf_fwhm: 1.0
+  JWST_NIRSpec: 
+    sigma_v: 290.5
+    sigma_v_error: 9.5
+    slit_length: 0.55
+    slit_width: 0.55
+    psf_fwhm: 0.15
+    comment_sigma_v: 'From Shawn Knabel (25/05/09): JWST-NIRSpec integrated velocity dispersion supercedes previous'
+WFI2033-4723:
+  amp_sersic_1: 11.9680634885201
+  amp_sersic_2: 3.464322205201
+  comment: 'only Ddt constraints from H0LiCOW analysis.'
+  e1_sersic1: -0.080762853577291
+  e1_sersic2: -0.251477534118674
+  e2_sersic1: 0.124422261698939
+  e2_sersic2: 0.0774849238297622
+  flag: 1
+  gamma: 1.95
+  gamma_error: 0.02
+  kappa_ext: 0.047
+  kappa_ext_err_down: 0.047
+  kappa_ext_err_up: 0.047
+  light_model: double_sersic
+  n_sersic_1: 4.0
+  n_sersic_2: 1.0
+  r_eff: 1.97
+  r_eff_error: 0.05
+  r_sersic_1: 0.881784298452188
+  r_sersic_2: 2.68697174749562
+  theta_E: 0.94
+  theta_E_error: 0.02
+  z_lens: 0.6575
+  z_source: 1.662
+  MUSE:
+    sigma_v: 250
+    sigma_v_error: 19
+    slit_length: 1.8
+    slit_width: 1.8
+    psf_fwhm: 1.0
+    comment_sigma_v: 'Measurement presented in Rusu et al. 2019'
+  JWST_NIRSpec: 
+    sigma_v: 210.7
+    sigma_v_error: 10.5
+    slit_length: 0.55
+    slit_width: 0.55
+    psf_fwhm: 0.15
+    comment_sigma_v: 'From Shawn Knabel (25/05/09): JWST-NIRSpec integrated velocity dispersion supercedes previous'
+WGD2038-4008:
+  GEMINI:
+    sigma_v: 296
+    sigma_v_error: 19
+    slit_length: 0.75
+    slit_width: 1.0
+    psf_fwhm: 0.9
+  MUSE:
+    sigma_v: 254.7
+    sigma_v_error: 16.3
+    aperture_radius: 1.5
+    psf_fwhm: 1.26
+    comment_sigma_v: 'From Martin Millon'
+  flag: 1
+  gamma: 2.3
+  gamma_error: 0.02
+  theta_E: 1.38
+  theta_E_error: 0.001
+  z_lens: 0.2283
+  z_source: 0.777
+  light_model: mge
+  r_eff: 2.223
+  r_eff_error: 0.05
+  amp: [10.1166058, 260.12411704, 840.1345265, 1283.9562321, 2397.67275685, 2456.47693214, 2104.95888866, 2080.65890571, 2789.26826004]
+  sigma: [0.05789597, 0.14905521, 0.30011039, 0.52339491, 1.0333712, 2.26157724, 3.73977616, 7.98705854, 9.96309808]
+  amp_sersic_1: 567.6426670845879
+  e1_sersic1: -0.07623528943309586
+  e2_sersic1: 0.2836845562553193
+  n_sersic_1: 1.9689791372819925
+  r_sersic_1: 0.8197067665963308
+  amp_sersic_2: 41.85059788678724
+  e1_sersic2: 0.025781180855518716
+  e2_sersic2: 0.039061649629272534
+  n_sersic_2: 1.9314134541126626
+  r_sersic_2: 3.382537646924453
+  amp_sersic_3: 12.785031634712599
+  e1_sersic3: -0.26839778822797533
+  e2_sersic3: 0.4251632692561582
+  n_sersic_3: 0.5019553048152823
+  r_sersic_3: 5.84374159325907

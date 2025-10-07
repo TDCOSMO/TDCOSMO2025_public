@@ -58,4 +58,4 @@ archivePrefix = {arXiv},
 }
 ```
 
-Corresponding author: Martin Millon, Simon Birrer, Anowar Shajib
+Corresponding author: [Martin Millon](mailto:martin.millon@unige.ch), Simon Birrer, Anowar Shajib

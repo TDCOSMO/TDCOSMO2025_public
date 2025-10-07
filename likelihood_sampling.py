@@ -395,10 +395,7 @@ def run_sampling(run_name, cosmology, with_tdcosmo, with_slacs_kcwi, with_sl2s, 
 
     # Set up the backend
     # Don't forget to clear it in case the file already exists
-    # TODO: perhaps backend is not needed if you get convergence right away
     backend = emcee.backends.HDFBackend(filename)
-    
-
     
     mcmc_sampler, kwargs_mean_start, kwargs_sigma_start, kwargs_sampler = initialization(cosmology=cosmology, 
                                                                                         with_tdcosmo=with_tdcosmo, with_slacs_kcwi=with_slacs_kcwi, with_sl2s=with_sl2s, with_pantheon=with_pantheon, 
@@ -515,7 +512,6 @@ def initialization(cosmology, with_tdcosmo, with_slacs_kcwi, with_sl2s, with_pan
     # these settings cast the chosen options above into the hierArc sampling options and completes them with the 
     # hyper-parameter settings and priors as chosen in TDCOSMO IV
     # you don't need to touch these configurations
-    # TODO: can be hidden in a config file or callable definition
 
     kwargs_lower_lens = {'lambda_mst': 0.5, 'lambda_mst_sigma': 0.001, 'alpha_lambda': -1, 'gamma_pl_list': np.ones(30) * 1.1}
     kwargs_upper_lens = {'lambda_mst': 1.5, 'lambda_mst_sigma': .5, 'alpha_lambda': 1, 'gamma_pl_list': np.ones(30)*2.9}
@@ -748,8 +744,6 @@ print(mcmc_sampler.param_names(latex_style=True))
 # ============
 # RUN SAMPLING
 # ============
-
-# TODO: save chains if not using the backend functionality
 
 start = time.time()
 mcmc_samples, log_prob, filename, kwargs_sampler = run_sampling(run_name, **kwargs_options, run_chain=run_chain)

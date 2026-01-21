@@ -142,7 +142,7 @@ if individual_lens is not None:
     lens_selected_tdcosmo = [lens for lens in lens_selected_tdcosmo if lens in individual_lens]
 
 # 7 TDCOSMO lenses
-tdcosmo_likelihood = 'tdcosmo7_likelihood_processed_' + anisotropy + '_.pkl'
+tdcosmo_likelihood = 'tdcosmo2025_likelihood_processed_' + anisotropy + '_.pkl'
 file = open(os.path.join(dir_path_tdcosmo, tdcosmo_likelihood), 'rb')
 tdcosmo7_likelihood_processed = pickle.load(file)
 file.close()
